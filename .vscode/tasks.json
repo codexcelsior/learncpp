@@ -8,6 +8,10 @@
                 "-fdiagnostics-color=always",
                 "-g",
                 "-pedantic-errors",
+                "-Wall",
+                "-Weffc++",
+                "-Wextra",
+                "-Wsign-conversion",
                 "${file}",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
