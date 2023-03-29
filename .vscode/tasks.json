@@ -12,6 +12,7 @@
                 "-Weffc++",
                 "-Wextra",
                 "-Wsign-conversion",
+                "-Werror",
                 "${file}",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
