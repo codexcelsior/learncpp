@@ -1,5 +1,7 @@
-# learncpp
+#SIDE NOTES AND REMAINING WORKS
+
 Walking through a thorough guide of C++ to get some experience of System-Level-coding
+If you want, you can also check it out (sites are pretty much free for everyone to use): https://www.learncpp.com/
 
 Help links:
 If configuration and Intellisense: 
@@ -13,4 +15,6 @@ Notable version:
 "-std=c++11", "-std=c++14", "-std=c++17", or "-std=c++20" to enable C++11/14/17/20 support respectively
 "-std=c++2a" for C++20 support instead if you have GCC 8 or 9
 
-
+Unresolved issues: 
+(TO REMIND ME CHECKING LATER)
+testcpp20compat.cpp 
