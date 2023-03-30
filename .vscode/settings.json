@@ -2,5 +2,6 @@
     "files.associations": {
         "type_traits": "cpp",
         "string_view": "cpp"
-    }
+    },
+    "cmake.sourceDirectory": "/home/eluxit/projects/learncpp"
 }
