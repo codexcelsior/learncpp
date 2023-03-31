@@ -26,6 +26,12 @@ int main()
     std::cout << "x is equal to: " << x << '\n';
     std::cout << "And that's all, folks!\n";
 
+    //std::cin
+    std::cout << "Enter a number? ";
+    int y{ };
+    std::cin >> y;
+    std::cout << "The number is: " << y << "\n";
+
 
     return 0;
 }
