@@ -30,8 +30,15 @@ int main()
     std::cout << "Enter a number? ";
     int y{ };
     std::cin >> y;
-    std::cout << "The number is: " << y << "\n";
+    std::cout << "You entered: " << y << "\n";
 
+    // Receiving 2 inputs in a line
+    std::cout << "Enter two number seperately: ";
+    int z { };
+    int c { };
+    std::cin >> z >> c;
+    std::cout << "The numbers you entered: " << z << " " << c << "\n";
+    
 
     return 0;
 }
