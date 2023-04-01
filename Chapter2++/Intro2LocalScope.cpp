@@ -50,10 +50,6 @@ int main()
     //STEP 5: X = 3, Y = 4 TERMINATED -> X = 1 , Y = 2 -> PRINT
     std::cout << "main: x = " << x << " y = " << y << '\n';
 
-
-
-
-
     return 0;
 
 
