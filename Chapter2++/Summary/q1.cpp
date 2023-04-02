@@ -8,15 +8,15 @@ int readNumber()
     return num;
 }
 
-void writeAnswer(int x, int y)
+void writeAnswer(int x)
 {
-    std::cout << x + y << "\n"; 
+    std::cout << x << "\n"; 
 }
 
 int main()
 {
     int x { readNumber() };
     int y { readNumber() };
-    writeAnswer( x, y ) ;
+    writeAnswer( x + y ) ;
 }
 
