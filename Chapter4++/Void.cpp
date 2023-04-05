@@ -13,14 +13,15 @@ void noReturn(int x) // void here means no return value
     // return 5; // error
 }
 
-int getValue(void)
+
+int getValue(void) // void here means no parameters
 {
     int x{};
     std::cin >> x;
     return x;
 }
 
-int getValue1()
+int getValue1() // empty function parameters is an implicit void
 {
     int x{};
     std::cin >> x;
