@@ -9,7 +9,7 @@ int main()
     bool b{false};
     std::cout << b << '\n'; // b is false, which evaluates to 0
     std::cout << !b << '\n'; // !b is true, which evaluates to 1
-
+  
 
     std::cout << std::boolalpha; // print bools as true or false
     std::cout << true << '\n';
@@ -23,4 +23,5 @@ int main()
 	std::cout << b2 << '\n';
 
 
-	return 0;}
+	return 0;
+}
