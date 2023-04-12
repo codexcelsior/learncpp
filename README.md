@@ -1,7 +1,6 @@
 #SIDE NOTES AND REMAINING WORKS
 
-Walking through a thorough guide of C++ to get some experience of System-Level-coding
-If you want, you can also check it out (sites are pretty much free for everyone to use): https://www.learncpp.com/
+Walking through a series of guide to get the holistic view of how computer works through C++
 
 Help links:
 If configuration and Intellisense: 
@@ -16,8 +15,6 @@ Notable version:
 "-std=c++2a" for C++20 support instead if you have GCC 8 or 9
 
 Unresolved issues: 
-CHAPTER 2:
-(TO REMIND ME CHECKING LATER)
-testcpp20compat.cpp 
+CHAPTER 2: testcpp20compat.cpp 
 
-CHAPTER 3: I SKIP THE WHOLE CHAPTER AS DEBUGGING WAS A TEDIOUS TASK JUST FOR THIS MOMMENT. MAY CHECK LATER.
+CHAPTER 3: whole chapter
