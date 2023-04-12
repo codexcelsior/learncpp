@@ -43,9 +43,9 @@ int main()
     printInt(6); // 6 will be used as the initializer for x
 
     const int maxStudentPerClass {30}; //This is a symbolic const
-
-
     
+
+
 
 
 
