@@ -19,9 +19,9 @@ int height()
 
 void afterFall(int height , int Sec)
 {
-
+    constexpr double gravity{9.8};
     for (int t = 0; t < Sec ; t++)
-        std::cout << "At " << t << " seconds, the ball is at height: " << height - (t * t * 9.8 / 2) << "   meters\n";
+        std::cout << "At " << t << " seconds, the ball is at height: " << height - (t * t * gravity / 2) << "   meters\n";
     std::cout << "At " << Sec << " seconds, the ball is on the ground\n";
 
 }
@@ -29,7 +29,6 @@ void afterFall(int height , int Sec)
 
 int main()
 {
-
     int Height = height();
     int Sec = sec();
     afterFall(Height, Sec);
