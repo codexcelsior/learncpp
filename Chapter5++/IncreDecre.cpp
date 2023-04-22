@@ -21,6 +21,7 @@ int main()
     // std::cout << x << "\n";
     int value{ add(++x, x) }; // is this 5 + 6, or 6 + 6?
     //Return value -> prioritized. ++x returns a value of 6 first then it comes to add function which take the sum of 2 sixs
+    //Actually different interpreter different behaviour 
 
     // It depends on what order your compiler evaluates the function arguments in
 
