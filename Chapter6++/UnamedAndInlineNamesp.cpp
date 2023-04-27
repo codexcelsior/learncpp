@@ -12,7 +12,7 @@ inline namespace v2 // declare an inline namespace named v2
 {
     void doSomething()
     {
-        std::cout << "v2\n";
+        std::cout << "v2\n"; 
     }
 }
 
