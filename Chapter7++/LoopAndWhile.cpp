@@ -76,13 +76,13 @@ int main()
     while (outer <= 5)
     {
         int inner {1};
-        while (inner <= outer)
+        while (inner <= outer)      
         {
             std::cout << inner << ' '; 
             inner++;
         }
 
-        std::cout << "\n";
+        std::cout << "\n"; 
         outer++;
     }
 //TIPS FOR NEW PROGRAMMER: TREAT THE INNER OR EACH LINE FIRST THEN TREAT ROWS AFTER 
