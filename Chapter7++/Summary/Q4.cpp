@@ -1,4 +1,7 @@
+#include <cstdlib>
+#include <ios>
 #include <iostream>
+#include <limits>
 #include <random>
 
 
@@ -20,6 +23,14 @@ for (int count{1}; count <= 7; count++)
     int user{};
     std::cin >> user;
 
+    if (user < 0 || user > 100) //Use to remove the maximum "extra" characters in the buffer
+    {
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        continue;
+    }
+
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
     if (user < goal)
         std::cout << "Your guess is too low. \n";  
     else if (user > goal)
@@ -33,7 +44,6 @@ for (int count{1}; count <= 7; count++)
         std::cout << "Sorry, you lose. The correct number was " << goal << "\n";
 }
 }
-
 
 
 int main()
@@ -57,7 +67,6 @@ int main()
                 std::cout << "Thank you for playing. \n";
                 break;
             }      
-
     }
 
 }
