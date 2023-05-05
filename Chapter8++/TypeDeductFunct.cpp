@@ -21,13 +21,13 @@ auto someFcn(bool b)
 auto add(int x, int y) -> int;
 auto divide(double x, double y) -> double;
 auto printSomething() -> void;
-auto generateSubstring(const std::string &s, int start, int len) -> std::string;
+// auto generateSubstring(const std::string &s, int start, int len) -> std::string;
 
 
-// void addAndPrint(auto x, auto y)
-// {
-//     std::cout << x + y << '\n';
-// }
+void addAndPrint(auto x, auto y)
+{
+    std::cout << x + y << '\n';
+}
 
 int main()
 {
