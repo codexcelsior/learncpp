@@ -9,14 +9,33 @@ T add( T x, T y)
     return x + y;
 }
 
-
+//Solution to B
 template <typename T>
 T mult(T x, int y)
 {
     return x * y;
 }
 
+//Solution to B
+template <typename T>
+T sub( T x, T y)
+{
+    return x - y;
+}
 
+template <typename T, typename Y>
+T sub ( T x, Y y)
+{
+    return x - y;
+}
+
+
+//Solution to C
+template<typename T, typename  U>
+auto sub(T x, U y)
+{
+    return x - y;
+}
 
 
 int main()
