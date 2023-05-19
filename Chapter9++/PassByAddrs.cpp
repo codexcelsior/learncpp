@@ -1,6 +1,11 @@
 #include <iostream>
 #include <string>
 #include <cassert>
+#include <string_view>
+
+
+//Part 1
+
 
 void printByValue(std::string val) // The function parameter is a copy of str
 {
@@ -35,6 +40,27 @@ void print(int* ptr) //Make a function to check whether it is pointer or not
 }
 
 
+//Part 2
+
+void greet(std::string* name=nullptr)
+{
+    std::cout << "Hello";
+    std::cout << (name ? *name : "guest") << "\n";
+}
+
+
+void nullify([[maybe_unused]] int* ptr2)
+{
+    ptr2 = nullptr;
+}
+
+
+void nullify2(int*& refptr) // refptr is now a reference to a pointer
+{
+    refptr = nullptr; // Make the function parameter a null pointer
+}
+
+
 int main()
 {
     std::string str{ "Hello, world!" };
@@ -51,6 +77,24 @@ int main()
 
     std::cout << "x = " << x << '\n';
 
+    greet(); //don't know who is
+    std::string joe{ "Joe" };
+    greet(&joe);
+
+    
+    //Changing what the pointer is pointing at
+
+    int* ptr{ &x }; // ptr points to x
+
+    std::cout << "ptr is " << (ptr ? "non-null\n" : "null\n");
+
+    nullify(ptr);
+
+    std::cout << "ptr is " << (ptr ? "non-null\n" : "null\n");
+
+
+    //Pass by address by reference to change what the pointer is pointing at
+    nullify2(ptr);
 
     return 0;
 }
