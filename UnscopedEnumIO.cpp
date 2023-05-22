@@ -15,7 +15,7 @@ enum Color
 };
 
 
-enum Animal
+enum Pet
 {
     cat = -3,
     dog,         // assigned -2
@@ -47,6 +47,8 @@ std::ostream& operator<<(std::ostream& out, Color color)
 	}
 }
 
+
+
 int main()
 {
     Color shirt{ blue }; // This actually stores the integral value 2
@@ -54,6 +56,10 @@ int main()
     std::cout << "Your shirt is " << getColor(shirt) << "\n";
 
     std::cout << "Your shirt is " << shirt << "\n";
+
+    //Unscoped enumerator conversion
+    Pet pet { static_cast<Pet>(2) };
+    pet = static_cast<Pet>(3); 
 
     return 0;   
 }
