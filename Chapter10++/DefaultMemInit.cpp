@@ -20,7 +20,7 @@ int main()
     Something s3 {}; //s3.x is uninitialized, default vals for s3.y and s3.z
 
 
-    
+
 
     return 0;
 }
