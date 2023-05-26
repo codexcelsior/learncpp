@@ -127,7 +127,7 @@ Fraction multiply(const Fraction& newFract, const Fraction& newFract1)
     return {newFract.numerator * newFract1.numerator, newFract.denominator * newFract1.denominator};
 }
 
-void printFraction(const Fraction f)
+void printFraction(const Fraction& f)
 {
     std::cout << f.numerator << "/" << f.denominator << "\n";
 }
