@@ -73,6 +73,35 @@ struct Foo2
     short qq{}; // note: qq is defined here
 };
 
+//Q1
+struct Advertising
+{
+    int adShown{};
+    double adPercentage{};
+    double adAVGPerClick{};
+};
+
+
+Advertising getAdvertising()
+{
+    Advertising temp;
+    std::cout << "How many ads were shown today? ";
+    std::cin >> temp.adShown;
+    std::cout << "What percentage of ads were clicked on by users? ";
+    std::cin >> temp.adPercentage;
+    std::cout << "What was the average earnings per click? ";
+    std::cin >> temp.adAVGPerClick;
+
+    return temp;
+}
+
+
+void printAdvertising(const Advertising& ad)
+{
+    std::cout << "Numbers of ads: " <<ad.adShown;
+    std::cout << "Percentage of ads: " << ad.adPercentage;
+    std::cout << "Ad Average click:  " << ad.adAVGPerClick;
+}
 
 
 int main()
@@ -101,9 +130,10 @@ int main()
 
     //Struct size and Data Struct alignment
     std::cout << "Size of Foo is " << sizeof(Foo) << "\n";
-    
-    
 
-
+    
+    //Q1: 
+    Advertising ad;
+    printAdvertising(ad);
 
 }
