@@ -122,12 +122,15 @@ Fraction getFraction()
     return fract;
 }
 
-void printFraction(const Fraction& newFract, const Fraction& newFract1)
+Fraction multiply(const Fraction& newFract, const Fraction& newFract1)
 {
-    std::cout << "Your fractions multiplied together: " 
-    << (newFract.numerator / newFract.denominator) * (newFract1.numerator / newFract1.denominator); 
+    return {newFract.numerator * newFract1.numerator, newFract.denominator * newFract1.denominator};
 }
 
+void printFraction(const Fraction f)
+{
+    std::cout << f.numerator << "/" << f.denominator << "\n";
+}
 
 
 int main()
@@ -163,9 +166,9 @@ int main()
     printAdvertising(ad);
 
     //Q2:
-    Fraction newFract;
-    Fraction newFract1;
+    Fraction f1{getFraction()};
+    Fraction f2{getFraction()};
 
-    printFraction(newFract, newFract1);
+    printFraction(multiply(f1, f2));
 
 }
