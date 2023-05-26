@@ -107,8 +107,8 @@ void printAdvertising(const Advertising& ad)
 //Q2
 struct Fraction
 {
-    int numerator{};
-    int denominator{};
+    int numerator{0};
+    int denominator{1};
 };
 
 Fraction getFraction()
