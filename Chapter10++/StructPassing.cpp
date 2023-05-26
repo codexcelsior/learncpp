@@ -104,6 +104,32 @@ void printAdvertising(const Advertising& ad)
 }
 
 
+//Q2
+struct Fraction
+{
+    int numerator{};
+    int denominator{};
+};
+
+Fraction getFraction()
+{
+    Fraction fract;
+    std::cout << "Enter a value for the numerator: ";
+    std::cin >> fract.numerator;
+    std::cout << "Enter a value for the denominator: ";
+    std::cin >> fract.denominator;
+
+    return fract;
+}
+
+void printFraction(const Fraction& newFract, const Fraction& newFract1)
+{
+    std::cout << "Your fractions multiplied together: " 
+    << (newFract.numerator / newFract.denominator) * (newFract1.numerator / newFract1.denominator); 
+}
+
+
+
 int main()
 {
     Employee joe {14, 32, 24.15};
@@ -135,5 +161,11 @@ int main()
     //Q1: 
     Advertising ad;
     printAdvertising(ad);
+
+    //Q2:
+    Fraction newFract;
+    Fraction newFract1;
+
+    printFraction(newFract, newFract1);
 
 }
