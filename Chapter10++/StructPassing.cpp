@@ -16,6 +16,62 @@ void printEmployee(const Employee& employee)
 }
 
 //Returning struct
+struct Point3d
+{
+    double x {0.0};
+    double y {0.0};
+    double z {0.0};
+};
+
+Point3d getZeroPoint()
+{
+    Point3d temp {0.0, 0.0, 0.0};
+    return temp;
+}
+
+
+//Getting unamed returing struct function
+
+Point3d getZEroPoint()
+{
+    return {0.0,0.0, 0.0};
+}
+
+// Point3d getZEroPoint()
+// {
+//     return Point3d {0.0,0.0, 0.0};
+// }
+
+//Struct ưith program-defined members
+struct Company
+{
+    int numberofEmployee{};
+    Employee CEO {}; //Employee is a struct within a Company struct 
+};
+
+
+struct Foo
+{
+    short a {};
+    int b {};
+    double c {};
+};
+
+struct Foo1
+{
+    short a{};
+    short qq{}; // note: qq is defined here
+    int b{};
+    double c{};
+};
+
+struct Foo2
+{
+    short a{};
+    int b{};
+    double c{};
+    short qq{}; // note: qq is defined here
+};
 
 
 
@@ -29,5 +85,25 @@ int main()
     std::cout << "\n";
 
     printEmployee(frank);
+
+    //Returning type
+    Point3d zero {getZeroPoint()};
+
+    if (zero.x == 0 && zero.y == 0.0 && zero.z == 0.0)
+        std::cout << "The point is zero \n";
+    else
+        std::cout << "The point is not zero \n";
+
+    Company myCompany{7, {1, 32, 55000.0}};
+
+    std::cout << myCompany.CEO.wage;
+
+
+    //Struct size and Data Struct alignment
+    std::cout << "Size of Foo is " << sizeof(Foo) << "\n";
+    
+    
+
+
 
 }
