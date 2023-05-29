@@ -34,23 +34,6 @@ enum DaysOfWeek
 };
 
 
-
-//Q2:
-namespace  animals
-{
-    enum Animals
-    {
-        chicken, 
-        dog, 
-        cat, 
-        elephant, 
-        duck, 
-        snake
-    };
-}
-
-
-
 int main()
 {
     int prime[5] {};
@@ -90,17 +73,6 @@ int main()
 
     //Fixed Arr Decl
     // int numberOfLessonsPerday[maxDaysOfWeeks] {};
-
-    //Q1
-    double temperature[365] {};
-    temperature[0] = 0.0;
-
-    //Q2
-    int LegCount[6]{2, 4, 2, 4, 2, 0};
-    
-
-    std::cout << "A Chicken has " << LegCount[animals::Animals::chicken];
-
 
 }
 
