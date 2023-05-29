@@ -34,6 +34,44 @@ int main()
         }
     }
 
+    //Q1
+    constexpr int array[]{ 4, 6, 7, 3, 8, 2, 1, 9, 5 };
+
+    int arr_size = static_cast<int>(sizeof(array)) / sizeof(array[0]);  
+
+    for (int index{0}; index < arr_size; ++index)
+    {
+        std::cout << array[index] << ' ';
+    }
+
+    //Q2
+    int input{};
     
+    constexpr int secndArray[]{ 4, 6, 7, 3, 8, 2, 1, 9, 5 };
+
+    do
+    {
+      std::cout << "Enter a number between 1 and 9: ";
+      std::cin >> input;
+
+            if (std::cin.fail())
+        {
+            std::cin.clear(); // reset any error flags
+            // std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // ignore any characters in the input buffer
+        }
+    } while (input > 9 || input <1);
+
+    for (int index{0}; index < arr_size; ++index)
+    {
+        std::cout << array[index] << ' ';
+        if (secndArray[index] == input)
+        {
+            std::cout <<  "The number " << input << " has index " <<  index << '\n';
+        }
+    }
+
+
+
+
 
 }
