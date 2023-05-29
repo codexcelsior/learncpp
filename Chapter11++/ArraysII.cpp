@@ -45,6 +45,15 @@ void passArray(int prime[5])
 }
 
 
+//Q2
+namespace animals
+{
+    enum Animals 
+    {
+        chicken, dog, cat, elephant, duck, snake
+    };
+}
+
 int main()
 {
     //Initializing fixed arrays
@@ -90,5 +99,13 @@ int main()
     //Determining the length of the array (C++ 17)
     int arrayOne[] {1 , 1, 2, 3, 5, 8, 13, 21};
     // std::cout << "The array has " << std::size(arrayOne) << "elements";
+
+    //Q1
+    double temperature[365] {};
+    temperature[0] = 0.0; 
+
+    //Q2
+    int Legs[] {2, 4, 2, 4, 2, 0};
+    std::cout << "Cat has " <<Legs[animals::Animals::cat] << "legs";
 
 }
