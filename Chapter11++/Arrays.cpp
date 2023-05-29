@@ -13,10 +13,10 @@ int testScore[30]{}; // allocate 30 integer variables in a fixed array
 int array[5] {};
 
 
-enum Animals
-{
-    animal_cat = 2
-};
+// enum Animals
+// {
+//     animal_cat = 2
+// };
 
 
 //Fixed Array Decl
@@ -32,6 +32,23 @@ enum DaysOfWeek
 
     maxDaysOfWeeks
 };
+
+
+
+//Q2:
+namespace  animals
+{
+    enum Animals
+    {
+        chicken, 
+        dog, 
+        cat, 
+        elephant, 
+        duck, 
+        snake
+    };
+}
+
 
 
 int main()
@@ -61,7 +78,7 @@ int main()
 
     array[1] = 7;
 
-    array[animal_cat] = 4;
+    // array[animal_cat] = 4;
 
     //Fixed array decl
     int numberOfLessonsPerday [7] {};
@@ -73,5 +90,17 @@ int main()
 
     //Fixed Arr Decl
     // int numberOfLessonsPerday[maxDaysOfWeeks] {};
+
+    //Q1
+    double temperature[365] {};
+    temperature[0] = 0.0;
+
+    //Q2
+    int LegCount[6]{2, 4, 2, 4, 2, 0};
+    
+
+    std::cout << "A Chicken has " << LegCount[animals::Animals::chicken];
+
+
 }
 
